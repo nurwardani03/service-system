@@ -1,30 +1,29 @@
-SERVICE SYSTEM
+🚀 SERVICE SYSTEM
+🌐 Company Profile Website with Integrated Online Recruitment
 
-Company Profile Website with Integrated Online Recruitment
-
-Service System adalah website company profile profesional yang dilengkapi dengan sistem lamaran kerja online. Platform ini berfungsi sebagai media branding perusahaan sekaligus sarana rekrutmen digital, di mana data pelamar dikirim otomatis ke email perusahaan.
+Service System adalah website company profile profesional yang dilengkapi sistem lamaran kerja online. Platform ini berfungsi sebagai media branding perusahaan sekaligus sarana rekrutmen digital, di mana data pelamar dikirim otomatis ke email perusahaan.
 
 Aplikasi dibangun dengan arsitektur modern, ringan, dan fokus pada proses pengiriman lamaran kerja secara efisien tanpa penyimpanan database.
 
-LICENSE NOTICE
+📜 License Notice
 
-This project is NOT open source.
+❗ This project is NOT open source
 
 Source code hanya diperuntukkan untuk:
 
-Kebutuhan internal
+🏢 Kebutuhan internal
 
-Demonstrasi portfolio
+🎓 Demonstrasi portfolio
 
-Keperluan akademik
+📚 Keperluan akademik
 
 Dilarang menyalin, memodifikasi, mendistribusikan, atau menggunakan ulang kode tanpa izin dari pengembang.
 
-SYSTEM OVERVIEW
+🧩 System Overview
 
-Website ini menggabungkan dua fungsi utama dalam satu platform:
+Website ini menggabungkan dua fungsi utama:
 
-Company Profile
+🏢 Company Profile
 
 Menampilkan profil perusahaan secara profesional
 
@@ -32,56 +31,43 @@ Menjelaskan layanan atau bidang usaha
 
 Meningkatkan kredibilitas perusahaan
 
-Online Recruitment
+💼 Online Recruitment
 
 Pelamar mengisi form lamaran langsung dari website
 
 Data pelamar dikirim otomatis ke email perusahaan
 
-Mengurangi proses manual melalui chat atau email terpisah
+Mengurangi proses manual via chat/email terpisah
 
-MAIN FEATURES
+✨ Main Features
 
-Company profile modern & responsif
+🌐 Company profile modern & responsif
 
-Halaman informasi perusahaan/layanan
+📝 Form lamaran kerja online
 
-Form lamaran kerja online
+⚡ Validasi form menggunakan JavaScript
 
-Validasi form menggunakan JavaScript
+📧 Pengiriman data pelamar langsung ke email perusahaan
 
-Pengiriman data pelamar langsung ke email perusahaan
+🪶 Sistem ringan tanpa database
 
-Sistem ringan tanpa database
+🚫 Tanpa sistem login
 
-Tanpa sistem login
+🔧 Struktur siap dikembangkan menjadi sistem HR
 
-Struktur siap dikembangkan menjadi sistem HR
-
-USER ROLES
-Website Visitor
-
-Melihat profil perusahaan
-
-Mengakses informasi layanan
-
-Mengirim lamaran kerja
-
-Company (Email Admin)
-
-Menerima data pelamar melalui email
-
-Melakukan proses seleksi di luar sistem
-
-TECHNOLOGY STACK
+👥 User Roles
+Role	Akses
+🌍 Website Visitor	Melihat profil & mengirim lamaran
+🏢 Company (HR Email)	Menerima data pelamar via email
+🛠 Technology Stack
 Component	Technology
 Backend	Laravel 10+
 Language	PHP 8.2+
 Frontend	Blade Template
 Styling	Tailwind CSS
-Client-side Script	JavaScript
+Client Script	JavaScript
 Server	Apache / Nginx
-SYSTEM ARCHITECTURE
+🏗 System Architecture
 User Browser
      │
      ▼
@@ -100,63 +86,50 @@ SMTP Mail Server
      ▼
 Company Email Inbox (HR)
 
-APPLICATION LAYERS
-Presentation Layer
-
-Menggunakan Blade, Tailwind CSS, dan JavaScript untuk tampilan company profile dan validasi form.
-
-Application Layer
-
-Laravel menangani routing, validasi server-side, pemrosesan form, dan pengiriman email.
-
-Service Layer
-
-SMTP digunakan untuk mengirim data pelamar ke email perusahaan tanpa penyimpanan database.
-
-DATA FLOW (RECRUITMENT PROCESS)
+🔄 Recruitment Data Flow
 User membuka halaman lamaran
         ↓
-User mengisi form
+Mengisi form
         ↓
-Validasi JavaScript berjalan
+Validasi JavaScript
         ↓
-Data dikirim ke server Laravel
+Data dikirim ke Laravel
         ↓
 Validasi server-side
         ↓
-Email dikirim ke perusahaan
+Email terkirim ke perusahaan
         ↓
 HR menerima data pelamar
 
-SECURITY APPROACH
+🔐 Security Approach
 
-Validasi input sisi client dan server
+✔ Validasi client & server side
 
-Proteksi CSRF bawaan Laravel
+✔ Proteksi CSRF Laravel
 
-Kredensial email disimpan pada file .env
+✔ Kredensial email disimpan di .env
 
-Tidak ada penyimpanan data pelamar di server
+✔ Tidak ada penyimpanan data pelamar di server
 
-SYSTEM LIMITATION
+⚠️ System Limitation
 
-Tidak memiliki sistem login
+❌ Tidak memiliki sistem login
 
-Tidak menyimpan data pelamar di database
+❌ Tidak menyimpan data pelamar
 
-Tidak ada dashboard admin
+❌ Tidak ada dashboard admin
 
-Seleksi pelamar dilakukan melalui email perusahaan
+📩 Seleksi dilakukan melalui email perusahaan
 
-INSTALLATION GUIDE
-1. Clone Repository
+💻 Installation Guide
+1️⃣ Clone Repository
 git clone https://github.com/USERNAME/service-system.git
 cd service-system
 
-2. Install Dependencies
+2️⃣ Install Dependency
 composer install
 
-3. Copy Environment File
+3️⃣ Setup ENV
 
 Windows:
 
@@ -167,21 +140,18 @@ Mac/Linux:
 
 cp .env.example .env
 
-4. Generate Application Key
+4️⃣ Generate Key
 php artisan key:generate
 
-5. Run Application
+5️⃣ Run Project
 php artisan serve
 
 
-Akses melalui browser:
+Akses di:
 
 http://127.0.0.1:8000
 
-DEFAULT ENV CONFIGURATION
-
-Project ini tidak menggunakan database.
-
+⚙️ Default ENV Configuration
 APP_NAME="Service System"
 APP_ENV=local
 APP_KEY=
@@ -208,30 +178,26 @@ MAIL_FROM_ADDRESS=yourcompanyemail@gmail.com
 MAIL_FROM_NAME="${APP_NAME}"
 
 
-Gunakan Gmail App Password, bukan password utama akun.
+Gunakan Gmail App Password, bukan password utama.
 
-FUTURE DEVELOPMENT POTENTIAL
+🚀 Future Development
 
-Struktur sistem memungkinkan pengembangan lanjutan seperti:
+📊 Dashboard HR
 
-Penyimpanan database pelamar
+🗄 Penyimpanan database pelamar
 
-Dashboard HR
+🔐 Sistem login admin
 
-Sistem login admin
+📈 Tracking status lamaran
 
-Tracking status lamaran
-
-Panel manajemen rekrutmen
-
-PROJECT STRUCTURE
+📁 Project Structure
 /app
 /routes
 /resources/views
 /public
 
-DEVELOPER
+👨‍💻 Developer
 
 Nur Wardani — 2026
 
-Dikembangkan sebagai website company profile modern dengan fitur rekrutmen terintegrasi untuk kebutuhan perusahaan masa kini.
+Website ini dikembangkan sebagai platform company profile modern dengan fitur rekrutmen terintegrasi untuk kebutuhan perusahaan masa kini.
