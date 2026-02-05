@@ -1,59 +1,237 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+SERVICE SYSTEM
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+Company Profile Website with Integrated Online Recruitment
 
-## About Laravel
+Service System adalah website company profile profesional yang dilengkapi dengan sistem lamaran kerja online. Platform ini berfungsi sebagai media branding perusahaan sekaligus sarana rekrutmen digital, di mana data pelamar dikirim otomatis ke email perusahaan.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Aplikasi dibangun dengan arsitektur modern, ringan, dan fokus pada proses pengiriman lamaran kerja secara efisien tanpa penyimpanan database.
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+LICENSE NOTICE
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+This project is NOT open source.
 
-## Learning Laravel
+Source code hanya diperuntukkan untuk:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework. You can also check out [Laravel Learn](https://laravel.com/learn), where you will be guided through building a modern Laravel application.
+Kebutuhan internal
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains thousands of video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+Demonstrasi portfolio
 
-## Laravel Sponsors
+Keperluan akademik
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the [Laravel Partners program](https://partners.laravel.com).
+Dilarang menyalin, memodifikasi, mendistribusikan, atau menggunakan ulang kode tanpa izin dari pengembang.
 
-### Premium Partners
+SYSTEM OVERVIEW
 
-- **[Vehikl](https://vehikl.com)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel)**
-- **[DevSquad](https://devsquad.com/hire-laravel-developers)**
-- **[Redberry](https://redberry.international/laravel-development)**
-- **[Active Logic](https://activelogic.com)**
+Website ini menggabungkan dua fungsi utama dalam satu platform:
 
-## Contributing
+Company Profile
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+Menampilkan profil perusahaan secara profesional
 
-## Code of Conduct
+Menjelaskan layanan atau bidang usaha
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+Meningkatkan kredibilitas perusahaan
 
-## Security Vulnerabilities
+Online Recruitment
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+Pelamar mengisi form lamaran langsung dari website
 
-## License
+Data pelamar dikirim otomatis ke email perusahaan
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+Mengurangi proses manual melalui chat atau email terpisah
+
+MAIN FEATURES
+
+Company profile modern & responsif
+
+Halaman informasi perusahaan/layanan
+
+Form lamaran kerja online
+
+Validasi form menggunakan JavaScript
+
+Pengiriman data pelamar langsung ke email perusahaan
+
+Sistem ringan tanpa database
+
+Tanpa sistem login
+
+Struktur siap dikembangkan menjadi sistem HR
+
+USER ROLES
+Website Visitor
+
+Melihat profil perusahaan
+
+Mengakses informasi layanan
+
+Mengirim lamaran kerja
+
+Company (Email Admin)
+
+Menerima data pelamar melalui email
+
+Melakukan proses seleksi di luar sistem
+
+TECHNOLOGY STACK
+Component	Technology
+Backend	Laravel 10+
+Language	PHP 8.2+
+Frontend	Blade Template
+Styling	Tailwind CSS
+Client-side Script	JavaScript
+Server	Apache / Nginx
+SYSTEM ARCHITECTURE
+User Browser
+     │
+     ▼
+Web Server (Apache/Nginx)
+     │
+     ▼
+Laravel Application
+ - Routing
+ - Form Processing
+ - Validation
+ - Email Handling
+     │
+     ▼
+SMTP Mail Server
+     │
+     ▼
+Company Email Inbox (HR)
+
+APPLICATION LAYERS
+Presentation Layer
+
+Menggunakan Blade, Tailwind CSS, dan JavaScript untuk tampilan company profile dan validasi form.
+
+Application Layer
+
+Laravel menangani routing, validasi server-side, pemrosesan form, dan pengiriman email.
+
+Service Layer
+
+SMTP digunakan untuk mengirim data pelamar ke email perusahaan tanpa penyimpanan database.
+
+DATA FLOW (RECRUITMENT PROCESS)
+User membuka halaman lamaran
+        ↓
+User mengisi form
+        ↓
+Validasi JavaScript berjalan
+        ↓
+Data dikirim ke server Laravel
+        ↓
+Validasi server-side
+        ↓
+Email dikirim ke perusahaan
+        ↓
+HR menerima data pelamar
+
+SECURITY APPROACH
+
+Validasi input sisi client dan server
+
+Proteksi CSRF bawaan Laravel
+
+Kredensial email disimpan pada file .env
+
+Tidak ada penyimpanan data pelamar di server
+
+SYSTEM LIMITATION
+
+Tidak memiliki sistem login
+
+Tidak menyimpan data pelamar di database
+
+Tidak ada dashboard admin
+
+Seleksi pelamar dilakukan melalui email perusahaan
+
+INSTALLATION GUIDE
+1. Clone Repository
+git clone https://github.com/USERNAME/service-system.git
+cd service-system
+
+2. Install Dependencies
+composer install
+
+3. Copy Environment File
+
+Windows:
+
+copy .env.example .env
+
+
+Mac/Linux:
+
+cp .env.example .env
+
+4. Generate Application Key
+php artisan key:generate
+
+5. Run Application
+php artisan serve
+
+
+Akses melalui browser:
+
+http://127.0.0.1:8000
+
+DEFAULT ENV CONFIGURATION
+
+Project ini tidak menggunakan database.
+
+APP_NAME="Service System"
+APP_ENV=local
+APP_KEY=
+APP_DEBUG=true
+APP_URL=http://127.0.0.1:8000
+
+LOG_CHANNEL=stack
+LOG_LEVEL=debug
+
+CACHE_DRIVER=file
+QUEUE_CONNECTION=sync
+SESSION_DRIVER=file
+SESSION_LIFETIME=120
+
+DB_CONNECTION=null
+
+MAIL_MAILER=smtp
+MAIL_HOST=smtp.gmail.com
+MAIL_PORT=587
+MAIL_USERNAME=yourcompanyemail@gmail.com
+MAIL_PASSWORD=your_app_password
+MAIL_ENCRYPTION=tls
+MAIL_FROM_ADDRESS=yourcompanyemail@gmail.com
+MAIL_FROM_NAME="${APP_NAME}"
+
+
+Gunakan Gmail App Password, bukan password utama akun.
+
+FUTURE DEVELOPMENT POTENTIAL
+
+Struktur sistem memungkinkan pengembangan lanjutan seperti:
+
+Penyimpanan database pelamar
+
+Dashboard HR
+
+Sistem login admin
+
+Tracking status lamaran
+
+Panel manajemen rekrutmen
+
+PROJECT STRUCTURE
+/app
+/routes
+/resources/views
+/public
+
+DEVELOPER
+
+Nur Wardani — 2026
+
+Dikembangkan sebagai website company profile modern dengan fitur rekrutmen terintegrasi untuk kebutuhan perusahaan masa kini.
