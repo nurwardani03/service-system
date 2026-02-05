@@ -1,157 +1,188 @@
-🚀 SERVICE SYSTEM
-🌐 Company Profile Website with Integrated Online Recruitment
+# 🚀 Service System
+![Laravel](https://img.shields.io/badge/Laravel-10+-red)
+![PHP](https://img.shields.io/badge/PHP-8.2+-blue)
+![Tailwind CSS](https://img.shields.io/badge/TailwindCSS-3.x-38BDF8)
+![License](https://img.shields.io/badge/License-Private-critical)
 
-Service System adalah website company profile profesional yang dilengkapi sistem lamaran kerja online. Platform ini berfungsi sebagai media branding perusahaan sekaligus sarana rekrutmen digital, di mana data pelamar dikirim otomatis ke email perusahaan.
+> **Company Profile Website with Integrated Online Recruitment**
 
-Aplikasi dibangun dengan arsitektur modern, ringan, dan fokus pada proses pengiriman lamaran kerja secara efisien tanpa penyimpanan database.
+---
 
-📜 License Notice
+## 🌐 Overview
 
-❗ This project is NOT open source
+**Service System** adalah website company profile profesional yang dilengkapi dengan sistem **lamaran kerja online berbasis email**.  
+Platform ini berfungsi sebagai media branding perusahaan sekaligus sarana rekrutmen digital yang ringan, cepat, dan efisien **tanpa penyimpanan database**.
 
-Source code hanya diperuntukkan untuk:
+---
 
-🏢 Kebutuhan internal
+## 🎯 Project Goals
 
-🎓 Demonstrasi portfolio
+- Menyediakan company profile modern dan profesional
+- Menyederhanakan proses rekrutmen melalui form online
+- Mengirim data pelamar langsung ke email perusahaan
+- Mengurangi proses manual via chat atau email terpisah
+- Cocok untuk kebutuhan internal, portfolio, dan demo sistem
 
-📚 Keperluan akademik
+---
 
-Dilarang menyalin, memodifikasi, mendistribusikan, atau menggunakan ulang kode tanpa izin dari pengembang.
+## 📜 License Notice
 
-🧩 System Overview
+❗ **This project is NOT open source**
 
-Website ini menggabungkan dua fungsi utama:
+Source code **hanya diperuntukkan untuk**:
 
-🏢 Company Profile
+- 🏢 Kebutuhan internal perusahaan
+- 🎓 Demonstrasi portfolio
+- 📚 Keperluan akademik
 
-Menampilkan profil perusahaan secara profesional
+🚫 **Dilarang menyalin, memodifikasi, mendistribusikan, atau menggunakan ulang kode tanpa izin tertulis dari pengembang.**
 
-Menjelaskan layanan atau bidang usaha
+---
 
-Meningkatkan kredibilitas perusahaan
+## 🧩 System Overview
 
-💼 Online Recruitment
+Service System menggabungkan dua fungsi utama:
 
-Pelamar mengisi form lamaran langsung dari website
+### 🏢 Company Profile
+- Menampilkan profil perusahaan secara profesional
+- Menjelaskan layanan atau bidang usaha
+- Meningkatkan kredibilitas dan kepercayaan perusahaan
 
-Data pelamar dikirim otomatis ke email perusahaan
+### 💼 Online Recruitment
+- Form lamaran kerja langsung dari website
+- Data pelamar dikirim otomatis ke email HR
+- Tanpa penyimpanan data di server
 
-Mengurangi proses manual via chat/email terpisah
+---
 
-✨ Main Features
+## ✨ Features
 
-🌐 Company profile modern & responsif
+- 🌐 Company profile modern & responsif
+- 📝 Form lamaran kerja online
+- ⚡ Validasi form menggunakan JavaScript
+- 📧 Pengiriman data pelamar via email
+- 🪶 Sistem ringan tanpa database
+- 🚫 Tanpa sistem login
+- 🔧 Struktur siap dikembangkan ke sistem HR
 
-📝 Form lamaran kerja online
+---
 
-⚡ Validasi form menggunakan JavaScript
+## 👥 User Roles
 
-📧 Pengiriman data pelamar langsung ke email perusahaan
+| Role | Description |
+|-----|------------|
+| 🌍 Website Visitor | Melihat company profile & mengirim lamaran |
+| 🏢 Company (HR Email) | Menerima data pelamar melalui email |
 
-🪶 Sistem ringan tanpa database
+---
 
-🚫 Tanpa sistem login
+## 🛠 Technology Stack
 
-🔧 Struktur siap dikembangkan menjadi sistem HR
+| Component | Technology |
+|---------|-----------|
+| Backend | Laravel 10+ |
+| Language | PHP 8.2+ |
+| Frontend | Blade Template |
+| Styling | Tailwind CSS |
+| Client Script | JavaScript |
+| Web Server | Apache / Nginx |
+| Email | SMTP |
 
-👥 User Roles
-Role	Akses
-🌍 Website Visitor	Melihat profil & mengirim lamaran
-🏢 Company (HR Email)	Menerima data pelamar via email
-🛠 Technology Stack
-Component	Technology
-Backend	Laravel 10+
-Language	PHP 8.2+
-Frontend	Blade Template
-Styling	Tailwind CSS
-Client Script	JavaScript
-Server	Apache / Nginx
-🏗 System Architecture
+---
+
+## 🏗 System Architecture
+
+```text
 User Browser
      │
      ▼
-Web Server (Apache/Nginx)
+Web Server (Apache / Nginx)
      │
      ▼
 Laravel Application
- - Routing
- - Form Processing
- - Validation
- - Email Handling
+ ├─ Routing
+ ├─ Form Handling
+ ├─ Validation
+ └─ Email Service
      │
      ▼
 SMTP Mail Server
      │
      ▼
 Company Email Inbox (HR)
+```
 
-🔄 Recruitment Data Flow
+## 🔄 Recruitment Data Flow
+
+```text
 User membuka halaman lamaran
         ↓
-Mengisi form
+Mengisi form lamaran
         ↓
 Validasi JavaScript
         ↓
-Data dikirim ke Laravel
-        ↓
-Validasi server-side
-        ↓
-Email terkirim ke perusahaan
-        ↓
-HR menerima data pelamar
+Data dikirim ke Laravel## 🔐 Security Implementation
 
-🔐 Security Approach
+- Client-side & server-side validation
+- CSRF protection bawaan Laravel
+- Kredensial email disimpan di file `.env`
+- Tidak ada penyimpanan data pelamar di server
 
-✔ Validasi client & server side
+---
+```
 
-✔ Proteksi CSRF Laravel
+## ⚠️ System Limitations
 
-✔ Kredensial email disimpan di .env
+```text
+- Tidak memiliki sistem login
+- Tidak menyimpan data pelamar
+- Tidak tersedia dashboard admin
+- Proses seleksi dilakukan melalui email perusahaan
 
-✔ Tidak ada penyimpanan data pelamar di server
+---
+```
 
-⚠️ System Limitation
-
-❌ Tidak memiliki sistem login
-
-❌ Tidak menyimpan data pelamar
-
-❌ Tidak ada dashboard admin
-
-📩 Seleksi dilakukan melalui email perusahaan
-
-💻 Installation Guide
-1️⃣ Clone Repository
+## 💻 Installation
+1. Clone Repository
+```bash
 git clone https://github.com/USERNAME/service-system.git
 cd service-system
+```
 
-2️⃣ Install Dependency
+2. Install Dependencies
+```bash
 composer install
+```
 
-3️⃣ Setup ENV
-
-Windows:
-
+3. Environment Setup
+```bash
+Windows
+```
+```bash
 copy .env.example .env
-
-
-Mac/Linux:
-
+```
+Mac / Linux
+```bash
 cp .env.example .env
+```
 
-4️⃣ Generate Key
+4. Generate Application Key
+```
 php artisan key:generate
+```
 
-5️⃣ Run Project
+5. Run Application
+```
 php artisan serve
+```
 
-
-Akses di:
-
+Akses aplikasi melalui browser:
+```bash
 http://127.0.0.1:8000
+```
 
-⚙️ Default ENV Configuration
+### ⚙️ Environment Configuration
+```bash
 APP_NAME="Service System"
 APP_ENV=local
 APP_KEY=
@@ -176,28 +207,28 @@ MAIL_PASSWORD=your_app_password
 MAIL_ENCRYPTION=tls
 MAIL_FROM_ADDRESS=yourcompanyemail@gmail.com
 MAIL_FROM_NAME="${APP_NAME}"
+```
 
+Gunakan Gmail App Password, bukan password utama Gmail.
 
-Gunakan Gmail App Password, bukan password utama.
+### 🚀 Future Development
+```text
+1. Dashboard HR
+2. Database penyimpanan pelamar
+3. Sistem login admin
+4. Tracking status lamaran
+5. Manajemen data pelamar
+```
 
-🚀 Future Development
-
-📊 Dashboard HR
-
-🗄 Penyimpanan database pelamar
-
-🔐 Sistem login admin
-
-📈 Tracking status lamaran
-
-📁 Project Structure
+### 📁 Project Structure
+```text
 /app
 /routes
 /resources/views
 /public
+```
 
-👨‍💻 Developer
+### 👨‍💻 Developer
+Nur Wardani @2026
+Website ini dikembangkan sebagai platform company profile modern dengan fitur rekrutmen terintegrasi untuk mendukung kebutuhan perusahaan masa kini.
 
-Nur Wardani — 2026
-
-Website ini dikembangkan sebagai platform company profile modern dengan fitur rekrutmen terintegrasi untuk kebutuhan perusahaan masa kini.
